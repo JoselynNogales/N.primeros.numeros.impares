@@ -1,18 +1,12 @@
-# Hello, world!
-#
-# This is an example function named 'hello' 
-# which prints 'Hello, world!'.
-#
-# You can learn more about package authoring with RStudio at:
-#
-#   https://r-pkgs.org
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Install Package:           'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:              'Ctrl + Shift + T'
+n_impares <- function() {
+  n <- as.integer(readline("¿Cuántos números impares deseas ver? "))
 
-hello <- function() {
-  print("Hello, world!")
+  if (n > 0) {
+    for (i in 1:n) {
+      cat((2 * i - 1), "\n")
+    }
+  } else {
+    cat("Por favor ingresa un número mayor que 0.\n")
+  }
 }
+n_impares()
